@@ -1,0 +1,3 @@
+[build]
+  command = "npx nx run getandrewmortimer:build:production"
+  publish = "dist/apps/getandrewmortimer"
