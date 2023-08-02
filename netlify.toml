@@ -1,3 +1,15 @@
 [build]
-  command = "npx nx run getandrewmortimer:build:production"
-  publish = "dist/apps/getandrewmortimer"
+  command = "nx run getandrewmortimer:build:production"
+  publish = "dist"
+
+[context]
+  name = "getandrewmortimer"
+  [context.build]
+    command = "npx nx run getandrewmortimer:build:production"
+    publish = "dist/getandrewmortimer"
+
+[context]
+  name = "empiricalarchetype"
+  [context.build]
+    command = "npx nx run empiricalarchetype:build:production"
+    publish = "dist/empiricalarchetype"
