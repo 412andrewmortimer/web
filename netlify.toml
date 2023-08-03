@@ -4,8 +4,8 @@
 
 [context.getandrewmortimer]
   command = "npx nx run getandrewmortimer:build:production"
-  publish = "dist/getandrewmortimer"
+  publish = "dist/apps/getandrewmortimer"
 
 [context.empiricalarchetype]
   command = "npx nx run empiricalarchetype:build:production"
-  publish = "dist/empiricalarchetype"
+  publish = "dist/apps/empiricalarchetype"
