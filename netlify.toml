@@ -1,5 +1,5 @@
 [build]
-  command = "npx nx run build"
+  command = "npx nx run web:build"
   publish = "dist"
 
 [context.getandrewmortimer]
