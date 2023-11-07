@@ -1,4 +1,4 @@
 module.exports = {
   name: 'web',
-  remotes: ['getandrewmortimer', 'empiricalarchetype'],
+  remotes: ['getandrewmortimer', 'empiricalarchetype', 'parknitro'],
 };
