@@ -63,10 +63,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "empiricalarchetype:build:production"
+          "buildTarget": "empiricalarchetype:build:production"
         },
         "development": {
-          "browserTarget": "empiricalarchetype:build:development"
+          "buildTarget": "empiricalarchetype:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -74,11 +74,11 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "empiricalarchetype:build"
+        "buildTarget": "empiricalarchetype:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
@@ -91,14 +91,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/empiricalarchetype/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/empiricalarchetype/jest.config.ts"
       }
     },
     "serve-static": {

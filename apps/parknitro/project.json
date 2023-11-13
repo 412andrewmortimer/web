@@ -63,10 +63,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "parknitro:build:production"
+          "buildTarget": "parknitro:build:production"
         },
         "development": {
-          "browserTarget": "parknitro:build:development"
+          "buildTarget": "parknitro:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -74,11 +74,11 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "parknitro:build"
+        "buildTarget": "parknitro:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
@@ -91,14 +91,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/parknitro/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/parknitro/jest.config.ts"
       }
     },
     "serve-static": {
