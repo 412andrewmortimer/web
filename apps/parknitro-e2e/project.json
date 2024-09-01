@@ -25,6 +25,7 @@
     "lint": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "executor": "@nx/eslint:lint"
     }
   }
@@ -42,4 +43,9 @@
   "tags": [],
   "implicitDependencies": ["parknitro"]
 >>>>>>> 0165f27 (Add third remote: Park Nitro)
+=======
+      "executor": "@nx/eslint:lint"
+    }
+  }
+>>>>>>> 5fc4f2f (Migrate Nx to v19 and Angular to v18)
 }

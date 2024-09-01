@@ -4,4 +4,8 @@
 .angular
 
 /.nx/cache
+<<<<<<< HEAD
 /.nx/workspace-data
+=======
+/.nx/workspace-data
+>>>>>>> 5fc4f2f (Migrate Nx to v19 and Angular to v18)

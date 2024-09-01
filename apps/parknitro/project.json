@@ -95,6 +95,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint"
+<<<<<<< HEAD
 =======
         "browserTarget": "parknitro:build"
 =======
@@ -112,6 +113,8 @@
         ]
       }
 >>>>>>> 0165f27 (Add third remote: Park Nitro)
+=======
+>>>>>>> 5fc4f2f (Migrate Nx to v19 and Angular to v18)
     },
     "test": {
       "executor": "@nx/jest:jest",
