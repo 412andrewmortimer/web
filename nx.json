@@ -10,14 +10,6 @@
       "inputs": ["default", "^production"],
       "cache": true
     },
-    "lint": {
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json",
-        "{workspaceRoot}/.eslintignore"
-      ],
-      "cache": true
-    },
     "@nx/jest:jest": {
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
       "cache": true,
@@ -30,6 +22,27 @@
           "codeCoverage": true
         }
       }
+    },
+    "@nx/eslint:lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
+      ],
+      "cache": true
+    },
+    "@nx/angular:webpack-browser": {
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "env": "NX_MF_DEV_REMOTES"
+        },
+        {
+          "env": "NX_MF_DEV_SERVER_STATIC_REMOTES"
+        }
+      ],
+      "dependsOn": ["^build"]
     }
   },
   "namedInputs": {
@@ -59,5 +72,6 @@
       "style": "scss"
     }
   },
-  "nxCloudAccessToken": "NTgzYzVkOGEtNzI3Yy00ZDVlLTgyNWQtZTI4NDFmY2YyNmNmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "NTgzYzVkOGEtNzI3Yy00ZDVlLTgyNWQtZTI4NDFmY2YyNmNmfHJlYWQtd3JpdGU=",
+  "useInferencePlugins": false
 }
