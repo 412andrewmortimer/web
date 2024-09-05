@@ -23,7 +23,23 @@
       }
     },
     "lint": {
+<<<<<<< HEAD
+<<<<<<< HEAD
       "executor": "@nx/eslint:lint"
     }
   }
+=======
+      "executor": "@nx/linter:eslint",
+=======
+      "executor": "@nx/eslint:lint",
+>>>>>>> 60608b9 (Upgrade to Angular 17)
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/parknitro-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["parknitro"]
+>>>>>>> 0165f27 (Add third remote: Park Nitro)
 }

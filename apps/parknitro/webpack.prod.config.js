@@ -1,7 +1,10 @@
 const { withModuleFederation } = require('@nx/angular/module-federation');
 const config = require('./module-federation.config');
 module.exports = withModuleFederation({
+<<<<<<< HEAD
   dts: false,
+=======
+>>>>>>> 0165f27 (Add third remote: Park Nitro)
   ...config,
   /*
    * Remote overrides for production.
